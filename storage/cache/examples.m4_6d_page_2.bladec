@@ -1,0 +1,19 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('title'); ?>
+ Seite 2
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection('header'); ?>
+ 2
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection('main'); ?>
+ Das ist die zweite Seite
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection('footer'); ?>
+ Viele Grüße
+<?php $this->stopSection(); ?>
+
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('examples.layout.m4_6d_layout'); } ?>

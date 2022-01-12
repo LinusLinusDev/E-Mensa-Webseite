@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+ <meta charset="UTF-8">
+ <title><?php echo $this->yieldContent('title'); ?></title>
+</head>
+<body>
+<h1><?php echo $this->yieldContent('header'); ?></h1>
+<h3><?php echo $this->yieldContent('main'); ?></h3>
+<h5><?php echo $this->yieldContent('footer'); ?></h5>
+</body>
+</html>

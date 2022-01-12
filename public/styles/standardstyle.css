@@ -1,0 +1,115 @@
+/*
+- Praktikum DBWT. Autoren:
+- Linus, Palm, 3271087
+- David, Rechkemmer, 3074595
+ */
+* {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.link {
+    color: #00b5ad;
+}
+
+nav {
+    font-size: 1.75em;
+}
+
+.navbar {
+    padding: 15%;
+    background-color: #00b5ad;
+}
+
+.logo {
+    width: 125px;
+}
+
+.nav-item{
+    padding: 1em;
+}
+
+.grow {
+    transition: all .4s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+
+#announcements > div {
+    border: 1px solid #00b5ad;
+}
+
+td > img {
+    height: 200px;
+}
+
+#reviews {
+    font-size: 150%;
+}
+
+.examplepicture {
+    width: 300px;
+}
+
+.bewertungsform {
+    margin-top: 10px;
+}
+
+#bemerkung {
+    height: 150px;
+}
+
+#about {
+    margin: 5px;
+    border: 1px solid #00b5ad;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.accordion-header {
+    accordion-button-active-color: black;
+    accordion-padding-x: 1.25 rem;
+    text-align: center;
+}
+
+#data {
+    font-size: 1.25em;
+}
+
+#contact > form {
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1.25em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+#impressum {
+    font-size: 1.25em;
+}
+
+#farewell{
+    padding-top: 30px;
+}
+
+footer {
+    font-size: 1.25em;
+}
