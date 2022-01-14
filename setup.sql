@@ -1,8 +1,8 @@
 -- create database
 
-create database emensawerbeseite CHARACTER SET UTF8mb4 COLLATE utf8mb4_unicode_ci;
+create database emensawebseite CHARACTER SET UTF8mb4 COLLATE utf8mb4_unicode_ci;
 
-use emensawerbeseite;
+use emensawebseite;
 
 -- create tables
 
@@ -280,6 +280,10 @@ values  (1, 3),
 
 insert into visitors (count)
 values  (0);
+
+insert into benutzer (id, email, password, admin, anzahlfehler, anzahlanmeldungen)
+values  (1, 'admin@emensa.example', '54473cce523ed6fa65961b08409762af0d6a96ad', 1, 0, 0),
+        (2, 'user@emensa.example', '54473cce523ed6fa65961b08409762af0d6a96ad', 0, 0, 0);
 
 -- create views
 

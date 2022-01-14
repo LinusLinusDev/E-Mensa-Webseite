@@ -7,5 +7,5 @@ return [
     'host' => 'localhost',
     'user' => 'root',
     'password' => 'password',
-    'database' => 'emensawerbeseite'
+    'database' => 'emensawebseite'
 ];
