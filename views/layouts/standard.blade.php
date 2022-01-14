@@ -1,7 +1,6 @@
 <!---
-- Praktikum DBWT. Autoren:
-- Linus, Palm, 3271087
-- David, Rechkemmer, 3074595
+- Author: Linus Palm
+- Date: 14.01.2022
 --->
 <!DOCTYPE html>
 <html lang="de">
@@ -53,9 +52,6 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/impressum">&copy; E-Mensa GmbH</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/D4ve-R">David Rechkemmer</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://github.com/LinusLinusDev">Linus Palm</a>

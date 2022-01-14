@@ -1,7 +1,6 @@
 <!---
-- Praktikum DBWT. Autoren:
-- Linus, Palm, 3271087
-- David, Rechkemmer, 3074595
+- Author: Linus Palm
+- Date: 14.01.2022
 --->
 @extends('layouts.standard')
 
@@ -84,7 +83,8 @@
             <tr>
                 <th scope="col"></th>
                 <th scope="col"></th>
-                <th scope="col" colspan="2">Gericht</th>
+                <th scope="col">Gericht</th>
+                <th scope="col">(Allergene)</th>
                 <th scope="col">Preise</th>
                 @if(isset($_SESSION['login_ok']))
                     <th scope="col">Bewertungen</th>
@@ -94,10 +94,13 @@
             <tbody>
             @foreach($meals as $meal)
                 <tr>
-                    <td colspan="2"><img alt="{{$meal->name}}.jpg" src="img/@if(isset($meal->bildname)){{$meal->bildname}}@else{{'00_image_missing.jpg'}}@endif"></td>
-                    <td colspan="2">{{ $meal->name }}
+                    <td colspan="2"><img alt="{{$meal['name']}}.jpg" src="img/@if(isset($meal['bildname'])){{$meal['bildname']}}@else{{'00_image_missing.jpg'}}@endif"></td>
+                    <td colspan="2">{{ $meal['name'] }}
+                        @if(isset($meal['allergene']))
+                            ({{$meal['allergene']}}})
+                        @endif
                     </td>
-                    <td>{{"intern: ".$meal->preis_intern}}<br>{{"extern: ".$meal->preis_extern}}</td>
+                    <td>{{"intern: ".number_format($meal['preis_intern'],2,',')}} €<br>{{"extern: ".number_format($meal['preis_extern'],2,',')}} €</td>
                     @if(isset($_SESSION['login_ok']))
                         <td><a class="link" href="/bewertung?gerichtid={{$meal['id']}}">Bewertung abgeben</a></td>
                     @endif

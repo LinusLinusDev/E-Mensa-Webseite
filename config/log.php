@@ -1,9 +1,8 @@
+<!---
+- Author: Linus Palm
+- Date: 14.01.2022
+--->
 <?php
-/**
- * Praktikum DBWT. Authors:
- *David Rechkemmer, 3074595
- *Linus Palm, 3271087
- */
 
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;

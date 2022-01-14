@@ -1,22 +1,5 @@
-# Routingscript MVC
+# E-Mensa-Webseite
 
-little routing script for use in DBWT
+This project was created by Linus Palm (https://github.com/LinusLinusDev) as part of the course "Databases and web technologies" at the FH Aachen.
 
-intended to run with only one dependency (bladeone).
-
-## usage
-
-* start this script by either executing `start_server.bat` or running `php -S 127.0.0.1:9001 -t public` in a shell from the project´s root directory.
-
-* [open the website](http://127.0.0.1:9001/)
-
-## prerequisites
-
-* PHP 7.4 or PHP 8.0
-
-after first importing into PhpStorm, the IDE will present you the following dialog. there you can select a composer executable (find it in `bin/composer.phar`) 
-
-![composer install](img/composer_phpstorm.png)
-
-or run `php bin/composer.phar update` in the terminal.
-
+To start this website, the directory "public" must be set as root directory. A MySQL database and PHP 7.4 or higher is required.In "config/db.php" and "config/orm.php" the database has to be configured. The necessary commands to set up the schema and the tables can be taken from "setup.sql".

@@ -1,7 +1,6 @@
 <!---
-- Praktikum DBWT. Autoren:
-- Linus, Palm, 3271087
-- David, Rechkemmer, 3074595
+- Author: Linus Palm
+- Date: 14.01.2022
 --->
 @extends('layouts.standard')
 

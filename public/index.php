@@ -7,20 +7,8 @@ const CONFIG_WEBROUTES = '../config/web.php';
 const CONFIG_DB = '../config/db.php';
 const CONFIG_LOG = '../config/log.php';
 
-// DEMO
-try {
-    if(!file_exists($_SERVER['DOCUMENT_ROOT'] . "/../vendor/autoload.php")) {
-        echo "<h1>Abhängigkeiten nicht gefunden</h1><pre>DOCUMENT_ROOT: {$_SERVER['DOCUMENT_ROOT']}</pre><br><p>Datei nicht gefunden: <strong>{$_SERVER['DOCUMENT_ROOT']}/../vendor/autoload.php</strong></p>";
-        echo "<p>Häufigste Ursache</p><ul><li>Das Verzeichnis <code>public/</code> ist als Wurzelverzeichnis verwendet worden.</li><li>Die Abhängigkeiten wurden nicht mit <code>composer update</code> installiert.</code></li></ul>";
-        exit(1);
-    }
-    // file exists
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/../vendor/autoload.php";
-    require_once '../config/orm.php';
-
-} catch (Exception $ex) {
-    echo "DOCUMENT_ROOT: {$_SERVER['DOCUMENT_ROOT']}\t\tError: ".$ex->getMessage();
-}
+require_once $_SERVER['DOCUMENT_ROOT'] . "/../vendor/autoload.php";
+require_once '../config/orm.php';
 use eftec\bladeone\BladeOne;
 
 /* Routing Script for PHP Dev Server */
@@ -220,12 +208,7 @@ function view($viewname, $viewargs = array())
     return $blade->run($viewname, $viewargs);
 }
 
-/**
- * logs message to specified log file
- * @author dave
- * @param string $message to log
- * @param bool $warning if log should be of type WARNING
- */
+
 function logger(string $message, bool $warning = false){
     $logger = include CONFIG_LOG;
     if($warning){
