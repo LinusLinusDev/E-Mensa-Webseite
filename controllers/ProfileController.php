@@ -36,8 +36,7 @@ class ProfileController {
     }
 
     public function abmeldung() {
-        $_SESSION['login_ok'] = null;
-        $_SESSION['user_id'] = null;
+        session_destroy();
         logger($_SESSION['user_email'] . " Logout successful");
         header('Location: /');
     }
